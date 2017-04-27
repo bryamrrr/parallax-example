@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="container">
+    <figure class="iphone" id="iphone">
+      <img src="iphone.jpg" alt="">
+      <div class="shape" id="mask"></div>
+    </figure>
+  </section>
+  <script>
+  const $iphone = document.getElementById('iphone');
+  const $mask = document.getElementById('mask');
+    window.addEventListener('scroll', function (e) {
+      var position = 54 + window.scrollY;
+      $mask.style.backgroundPosition = '-' + position + 'px';
+      $iphone.style.transform = 'rotate(-' + position*0.01 + 'deg)'
+    });
+  </script>
+</body>
+</html>

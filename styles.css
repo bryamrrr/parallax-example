@@ -1,0 +1,25 @@
+.container {
+  height: 200vh;
+  margin: 0 auto;
+  text-align: center;
+  width: 900px;
+}
+
+.iphone {
+  display: inline-block;
+  margin-top: 150px;
+  position: relative;
+  transition: .1s;
+}
+
+.shape {
+  background-image: url(shape.jpg);
+  background-position: -54px;
+  height: 128px;
+  mask-image: url(apple-mask.png);
+  -webkit-mask-image: url(apple-mask.png);
+  width: 128px;
+  position: absolute;
+  top: 74px;
+  right: 161px;
+}
